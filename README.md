@@ -4,7 +4,8 @@
 # Task #3 for Web Development & Designing intern.
 
 A Simple website where payment integrated.<br>
-With a simple donate button, where user can select the amout to be paid and payment type, e.g. credit caed, Net banking, etc. with #instamojo payment gateway.<br>
+With a simple donate button, where user can select the amout to be paid and payment type, e.g. credit caed, Net banking, etc.<br>
+with help of # instamojo payment gateway.<br>
 once the payment is done and invoice will be generated and email will be sent to the user.
 
 # It is testing account / sandbox.
