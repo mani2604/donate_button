@@ -1,0 +1,159 @@
+/*=======================================================landing page=================================================================================*/
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #444;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+ }
+  
+
+/*============================================text==========================================*/
+
+.title {
+    margin-top: 25vh;
+    margin-left: 85px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background-color: #3C3E3F;
+    display: inline;
+}
+.rb {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: 4;
+  display: inline-block;
+  font-size: 3.5rem;
+  font-family: 'PT Sans-serif';
+}
+
+.word {
+    margin-left: -8px;
+}
+
+.name {
+    color: #ED5565; 
+}
+.rb:hover {
+  color: #00ccff;
+  animation: rubberBand 1s infinite; 
+  animation-name: rubberBand;
+}
+.name:hover {
+    color: #55A0EA;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+} 
+
+/*===============================================End text=======================================*/
+
+
+/*=====================================================Scroll Button===================================================================*/
+
+ main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #1782cc;
+        transition: all 0.5s ease-out; }
+
+/*=====================================================Scroll Button===================================================================*/
+
+
+/*=====================================================Scroll Button===================================================================*/
+
+.scroll-btn{
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.scroll-bar
+{
+    animation: mover 2s infinite alternate;
+    animation-delay: -0.8s;
+}
+@keyframes mover
+{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(10px);}
+    100%{transform: translateX(0px);}
+;
+
+}
+
+/*=================================================Ending scroll Button===================================================================*/
+
+/*====================================================================================================================*/
+
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .title {
+      line-height: 1;
+      margin-bottom: 1rem; 
+      margin-left: -2px;
+       }
+     h2{
+      line-height: 135%;
+     }
+  }
+
+/*====================================================================================================================*/
+
+@media screen and (max-width: 500px) {
+    main .title {
+      margin-top: 30%;
+      align-items: center;
+      text-align: center;
+      margin-left: -2px;
+       }
+     h2{
+      line-height: 135%;
+     }  
+       }
+
+
+/*=======================================================End landing page=================================================================================*/
+
+
